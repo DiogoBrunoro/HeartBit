@@ -20,6 +20,7 @@
 		C50FDD122DA5A06B00D90658 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = C50FDD112DA5A06B00D90658 /* GoogleGenerativeAI */; };
 		C50FDD142DA5A07400D90658 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = C50FDD132DA5A07400D90658 /* Property List.plist */; };
 		C50FDD162DA5A09800D90658 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FDD152DA5A09800D90658 /* APIKey.swift */; };
+		C5EB80542DA6F7230044D058 /* IDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EB80532DA6F7230044D058 /* IDModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C50FDD0E2DA59F6000D90658 /* CalcIMCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcIMCView.swift; sourceTree = "<group>"; };
 		C50FDD132DA5A07400D90658 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		C50FDD152DA5A09800D90658 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		C5EB80532DA6F7230044D058 /* IDModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				C50FDD0E2DA59F6000D90658 /* CalcIMCView.swift */,
 				C50FDD132DA5A07400D90658 /* Property List.plist */,
 				C50FDD152DA5A09800D90658 /* APIKey.swift */,
+				C5EB80532DA6F7230044D058 /* IDModel.swift */,
 			);
 			path = HeartBit;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				C50FDD092DA59EFB00D90658 /* Model.swift in Sources */,
 				C50FDD032DA59EBD00D90658 /* FormView.swift in Sources */,
+				C5EB80542DA6F7230044D058 /* IDModel.swift in Sources */,
 				C50FDCF72DA59E8500D90658 /* ContentView.swift in Sources */,
 				C50FDD0F2DA59F6100D90658 /* CalcIMCView.swift in Sources */,
 				C50FDD0B2DA59F1400D90658 /* resultadoIMC.swift in Sources */,

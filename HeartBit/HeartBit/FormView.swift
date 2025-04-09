@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct FormView: View {
-    // Campos do formulário
     @State private var name = ""
     @State private var cpf = ""
     @State private var rg = ""
@@ -47,6 +46,9 @@ struct FormView: View {
 
     @State private var showSaveAlert = false
 
+    @ObservedObject var vm = ViewModel()
+    
+    @MainActor
     var body: some View {
         ZStack {
             Color.backgroundColor1.ignoresSafeArea()
@@ -68,6 +70,68 @@ struct FormView: View {
                             Button(action: {
                                 saveForm()
                                 showSaveAlert = true
+                                if formAlreadySaved() {
+                                    let formData = newFormData(
+                                        _id: id,
+                                        _rev: rev,
+                                        name: name,
+                                        cpf: cpf,
+                                        rg: rg,
+                                        phone: phone,
+                                        naturalidade: naturalidade,
+                                        address: address,
+                                        neighborhood: neighborhood,
+                                        city: city,
+                                        postalCode: postalCode,
+                                        state: state,
+                                        susCard: susCard,
+                                        healthPlan: healthPlan,
+                                        bloodType: bloodType,
+                                        doctorName: doctorName,
+                                        doctorPhone: doctorPhone,
+                                        emergencyContacts: emergencyContacts,
+                                        medicalHistory: medicalHistory,
+                                        allergyDetails: allergyDetails,
+                                        seizureDetails: seizureDetails,
+                                        feverMedication: feverMedication,
+                                        surgeryDetails: surgeryDetails,
+                                        isAllergic: isAllergic,
+                                        hasSeizures: hasSeizures,
+                                        surgeryDone: surgeryDone,
+                                        birthDate: birthDate,
+                                        healthIssues: healthIssues
+                                    )
+
+                                    Task {
+                                        let url = URL(string: "http://192.168.128.8:1880/putformteste")!
+                                        do {
+                                            try await vm.putForm(url: url, formData: formData)
+                                            print("Formulário enviado com sucesso.")
+                                        } catch {
+                                            print("Erro ao enviar o formulário: \(error.localizedDescription)")
+                                        }
+                                    }
+                                }
+                                else{
+                                    let formData = FormData(
+                                        name: name, cpf: cpf, rg: rg, phone: phone, naturalidade: naturalidade,
+                                        address: address, neighborhood: neighborhood, city: city, postalCode: postalCode, state: state,
+                                        susCard: susCard, healthPlan: healthPlan, bloodType: bloodType,
+                                        doctorName: doctorName, doctorPhone: doctorPhone, emergencyContacts: emergencyContacts,
+                                        medicalHistory: medicalHistory, allergyDetails: allergyDetails, seizureDetails: seizureDetails,
+                                        feverMedication: feverMedication, surgeryDetails: surgeryDetails,
+                                        isAllergic: isAllergic, hasSeizures: hasSeizures, surgeryDone: surgeryDone,
+                                        birthDate: birthDate, healthIssues: healthIssues
+                                    )
+                                    Task {
+                                        let url = URL(string: "http://192.168.128.8:1880/postformteste")!
+                                        do {
+                                            try await vm.postForm(url: url, formData: formData)
+                                        } catch {
+                                            print("Erro ao enviar o formulário: \(error.localizedDescription)")
+                                        }
+                                    }
+                                }
                             }) {
                                 HStack {
                                     Spacer()
@@ -310,6 +374,11 @@ struct FormData: Codable {
     let birthDate: Date
     let healthIssues: [String: Bool]
 }
+
+func formAlreadySaved() -> Bool {
+    return UserDefaults.standard.data(forKey: "formData") != nil
+}
+
 
 #Preview {
     FormView()
