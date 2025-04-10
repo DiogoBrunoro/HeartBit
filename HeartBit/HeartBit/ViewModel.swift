@@ -1,4 +1,3 @@
-
 //
 //  ViewModel.swift
 //  trabaio
@@ -18,8 +17,9 @@ enum NetworkError: Error {
 class ViewModel: ObservableObject {
     
     @Published var bpms: [bpm] = []
-    @Published var newFormData : [newFormData] = []
-    @Published var getFormData : newFormData
+    
+    @Published var formularios: [newFormData] = []
+    @Published var formulariounico : newFormData?
     
     func fetch(){
         guard let url = URL(string: "http://192.168.128.8:1880/getbatimentosteste") else{
@@ -75,12 +75,12 @@ class ViewModel: ObservableObject {
         }
     }
     
-    func putForm(url: URL, formData: newFormData) async throws {
+    func putForm(url: URL, newFormData: newFormData) async throws {
         var request = URLRequest(url: url)
         request.httpMethod = "PUT"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
-        let encodedData = try JSONEncoder().encode(formData)
+        let encodedData = try JSONEncoder().encode(newFormData)
         request.httpBody = encodedData
 
         let (_, response) = try await URLSession.shared.data(for: request)
@@ -93,30 +93,31 @@ class ViewModel: ObservableObject {
 
 
 
-    func fetchUploadForms() {
-        guard let url = URL(string: "http://192.168.128.8:1880/getformteste") else {
-            print("URL inválida.")
-            return
-        }
-
-        let task = URLSession.shared.dataTask(with: url){ [weak self] data, _, error in
-            
-            guard let data = data, error == nil else{
+    func fetchForm(){
+            guard let url = URL(string: "http://192.168.128.8:1880/getformteste") else {
                 return
             }
-
-            do {
-                let parsed = try JSONDecoder().decode([newFormData].self, from: data)
-                DispatchQueue.main.async {
-                    self?.newFormData = parsed
-                    self?.getFormData = self?.newFormData[0]
+            
+            let task = URLSession.shared.dataTask(with: url){[weak self] data, _, error in
+                guard let data = data, error == nil else{
+                    return
                 }
-            } catch {
-                print("Erro ao decodificar: \(error)")
+                
+                do{
+                    let parsed = try JSONDecoder().decode([newFormData].self, from: data)
+                    
+                    DispatchQueue.main.async{
+                        print(parsed)
+                        self?.formularios = parsed
+                        self?.formulariounico = self?.formularios[0]
+                    }
+                }catch{
+                    print(error)
+                }
             }
+            
+            task.resume()
+            
+            
         }
-
-        task.resume()
-    }
-
 }

@@ -36,7 +36,7 @@ struct ContentView: View {
                     .frame(width: 100, height: 100)
                      Text("IMC")
                 }
-            FormView()
+            FormEditView()
                 .tabItem{
                     Image(systemName: "list.bullet.clipboard.fill")
                     .resizable()

@@ -7,35 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8126A0FA2DA83008008DE22C /* location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126A0F92DA83008008DE22C /* location.swift */; };
+		8126A0FC2DA8336F008DE22C /* telaGrafico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126A0FB2DA8336F008DE22C /* telaGrafico.swift */; };
+		8126A0FE2DA83D43008DE22C /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8126A0FD2DA83D43008DE22C /* GenerativeAI-Info.plist */; };
+		8126A1002DA84A83008DE22C /* FormEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126A0FF2DA84A83008DE22C /* FormEditView.swift */; };
+		8126A1022DA84D69008DE22C /* Testeemail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126A1012DA84D69008DE22C /* Testeemail.swift */; };
 		C50FDCF52DA59E8500D90658 /* HeartBitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FDCF42DA59E8500D90658 /* HeartBitApp.swift */; };
 		C50FDCF72DA59E8500D90658 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FDCF62DA59E8500D90658 /* ContentView.swift */; };
 		C50FDCF92DA59E8600D90658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50FDCF82DA59E8600D90658 /* Assets.xcassets */; };
 		C50FDCFC2DA59E8600D90658 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50FDCFB2DA59E8600D90658 /* Preview Assets.xcassets */; };
-		C50FDD032DA59EBD00D90658 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FDD022DA59EBD00D90658 /* FormView.swift */; };
 		C50FDD052DA59ED000D90658 /* HeartBitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FDD042DA59ED000D90658 /* HeartBitView.swift */; };
 		C50FDD092DA59EFB00D90658 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FDD082DA59EFB00D90658 /* Model.swift */; };
 		C50FDD0B2DA59F1400D90658 /* resultadoIMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FDD0A2DA59F1400D90658 /* resultadoIMC.swift */; };
 		C50FDD0D2DA59F2E00D90658 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FDD0C2DA59F2E00D90658 /* ViewModel.swift */; };
 		C50FDD0F2DA59F6100D90658 /* CalcIMCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FDD0E2DA59F6000D90658 /* CalcIMCView.swift */; };
 		C50FDD122DA5A06B00D90658 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = C50FDD112DA5A06B00D90658 /* GoogleGenerativeAI */; };
-		C50FDD142DA5A07400D90658 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = C50FDD132DA5A07400D90658 /* Property List.plist */; };
 		C50FDD162DA5A09800D90658 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FDD152DA5A09800D90658 /* APIKey.swift */; };
 		C5EB80542DA6F7230044D058 /* IDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EB80532DA6F7230044D058 /* IDModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8126A0F92DA83008008DE22C /* location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = location.swift; sourceTree = "<group>"; };
+		8126A0FB2DA8336F008DE22C /* telaGrafico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = telaGrafico.swift; sourceTree = "<group>"; };
+		8126A0FD2DA83D43008DE22C /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		8126A0FF2DA84A83008DE22C /* FormEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormEditView.swift; sourceTree = "<group>"; };
+		8126A1012DA84D69008DE22C /* Testeemail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testeemail.swift; sourceTree = "<group>"; };
 		C50FDCF12DA59E8500D90658 /* HeartBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C50FDCF42DA59E8500D90658 /* HeartBitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartBitApp.swift; sourceTree = "<group>"; };
 		C50FDCF62DA59E8500D90658 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C50FDCF82DA59E8600D90658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C50FDCFB2DA59E8600D90658 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C50FDD022DA59EBD00D90658 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		C50FDD042DA59ED000D90658 /* HeartBitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartBitView.swift; sourceTree = "<group>"; };
 		C50FDD082DA59EFB00D90658 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C50FDD0A2DA59F1400D90658 /* resultadoIMC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultadoIMC.swift; sourceTree = "<group>"; };
 		C50FDD0C2DA59F2E00D90658 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C50FDD0E2DA59F6000D90658 /* CalcIMCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcIMCView.swift; sourceTree = "<group>"; };
-		C50FDD132DA5A07400D90658 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		C50FDD152DA5A09800D90658 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		C5EB80532DA6F7230044D058 /* IDModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,17 +79,20 @@
 			children = (
 				C50FDCF42DA59E8500D90658 /* HeartBitApp.swift */,
 				C50FDCF62DA59E8500D90658 /* ContentView.swift */,
+				8126A0FF2DA84A83008DE22C /* FormEditView.swift */,
+				C50FDD0C2DA59F2E00D90658 /* ViewModel.swift */,
 				C50FDCF82DA59E8600D90658 /* Assets.xcassets */,
 				C50FDCFA2DA59E8600D90658 /* Preview Content */,
-				C50FDD022DA59EBD00D90658 /* FormView.swift */,
 				C50FDD042DA59ED000D90658 /* HeartBitView.swift */,
+				8126A1012DA84D69008DE22C /* Testeemail.swift */,
+				8126A0FB2DA8336F008DE22C /* telaGrafico.swift */,
+				8126A0F92DA83008008DE22C /* location.swift */,
 				C50FDD082DA59EFB00D90658 /* Model.swift */,
 				C50FDD0A2DA59F1400D90658 /* resultadoIMC.swift */,
-				C50FDD0C2DA59F2E00D90658 /* ViewModel.swift */,
 				C50FDD0E2DA59F6000D90658 /* CalcIMCView.swift */,
-				C50FDD132DA5A07400D90658 /* Property List.plist */,
 				C50FDD152DA5A09800D90658 /* APIKey.swift */,
 				C5EB80532DA6F7230044D058 /* IDModel.swift */,
+				8126A0FD2DA83D43008DE22C /* GenerativeAI-Info.plist */,
 			);
 			path = HeartBit;
 			sourceTree = "<group>";
@@ -160,8 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C50FDD142DA5A07400D90658 /* Property List.plist in Resources */,
 				C50FDCFC2DA59E8600D90658 /* Preview Assets.xcassets in Resources */,
+				8126A0FE2DA83D43008DE22C /* GenerativeAI-Info.plist in Resources */,
 				C50FDCF92DA59E8600D90658 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,14 +182,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8126A1022DA84D69008DE22C /* Testeemail.swift in Sources */,
 				C50FDD092DA59EFB00D90658 /* Model.swift in Sources */,
-				C50FDD032DA59EBD00D90658 /* FormView.swift in Sources */,
+				8126A1002DA84A83008DE22C /* FormEditView.swift in Sources */,
 				C5EB80542DA6F7230044D058 /* IDModel.swift in Sources */,
+				8126A0FA2DA83008008DE22C /* location.swift in Sources */,
 				C50FDCF72DA59E8500D90658 /* ContentView.swift in Sources */,
 				C50FDD0F2DA59F6100D90658 /* CalcIMCView.swift in Sources */,
 				C50FDD0B2DA59F1400D90658 /* resultadoIMC.swift in Sources */,
 				C50FDCF52DA59E8500D90658 /* HeartBitApp.swift in Sources */,
 				C50FDD052DA59ED000D90658 /* HeartBitView.swift in Sources */,
+				8126A0FC2DA8336F008DE22C /* telaGrafico.swift in Sources */,
 				C50FDD162DA5A09800D90658 /* APIKey.swift in Sources */,
 				C50FDD0D2DA59F2E00D90658 /* ViewModel.swift in Sources */,
 			);
@@ -318,6 +330,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HeartBit/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = aaaaa;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = aaaaa;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -346,6 +360,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HeartBit/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = aaaaa;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = aaaaa;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
